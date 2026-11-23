@@ -12,9 +12,12 @@ from pathlib import Path
 from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Inches, Pt, RGBColor
+
+REPO_URL = "https://github.com/nanfeiyan4/Huge-DATA"
 
 BODY_FONT = "宋体"
 HEAD_FONT = "黑体"
@@ -42,6 +45,37 @@ def set_font(run, name: str = BODY_FONT, size: float | None = None,
     if color is not None:
         run.font.color.rgb = color
 
+
+def add_hyperlink(paragraph, url: str, text: str, size: float = 9.5):
+    """Insert a real clickable hyperlink run into ``paragraph``."""
+    r_id = paragraph.part.relate_to(url, RT.HYPERLINK, is_external=True)
+    link = OxmlElement("w:hyperlink")
+    link.set(qn("r:id"), r_id)
+
+    run = OxmlElement("w:r")
+    rpr = OxmlElement("w:rPr")
+    fonts = OxmlElement("w:rFonts")
+    for attr in ("w:ascii", "w:hAnsi", "w:eastAsia"):
+        fonts.set(qn(attr), BODY_FONT)
+    rpr.append(fonts)
+    color = OxmlElement("w:color")
+    color.set(qn("w:val"), "0563C1")
+    rpr.append(color)
+    underline = OxmlElement("w:u")
+    underline.set(qn("w:val"), "single")
+    rpr.append(underline)
+    sz = OxmlElement("w:sz")
+    sz.set(qn("w:val"), str(int(size * 2)))
+    rpr.append(sz)
+    run.append(rpr)
+
+    node = OxmlElement("w:t")
+    node.text = text
+    node.set(qn("xml:space"), "preserve")
+    run.append(node)
+    link.append(run)
+    paragraph._p.append(link)
+    return link
 
 def style_doc(doc: Document) -> None:
     normal = doc.styles["Normal"]
@@ -227,6 +261,12 @@ def build(data: dict, figdir: Path, out: Path, data10: dict | None = None) -> No
     para(doc, abs_text)
     para(doc, "关键词：索引推荐；存储预算；代价模型；HypoPG；TPC-H；执行反馈",
          9.5, first_indent=False)
+
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(4)
+    p.paragraph_format.space_after = Pt(2)
+    set_font(p.add_run("代码、全部原始测量结果与图表已开源："), BODY_FONT, 9.5)
+    add_hyperlink(p, REPO_URL, REPO_URL, 9.5)
 
     # ---------------- 1 引言
     doc.add_heading("1　问题与动机", level=1)
