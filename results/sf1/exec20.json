@@ -1,0 +1,300 @@
+{
+  "tag": "exec20",
+  "candidates": [
+    {
+      "table": "nation",
+      "columns": [
+        "n_name",
+        "n_nationkey"
+      ],
+      "measured_gain_ms": -1.0,
+      "size_mb": 0.02,
+      "build_s": 0.0,
+      "selected": false
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_suppkey",
+        "s_nationkey"
+      ],
+      "measured_gain_ms": -20.6,
+      "size_mb": 0.23,
+      "build_s": 0.0,
+      "selected": false
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_shipdate"
+      ],
+      "measured_gain_ms": 2131.8,
+      "size_mb": 40.72,
+      "build_s": 3.3,
+      "selected": true
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_container",
+        "p_brand"
+      ],
+      "measured_gain_ms": 52.5,
+      "size_mb": 1.41,
+      "build_s": 0.3,
+      "selected": true
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderdate"
+      ],
+      "measured_gain_ms": 521.1,
+      "size_mb": 10.38,
+      "build_s": 0.9,
+      "selected": true
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_size",
+        "p_brand"
+      ],
+      "measured_gain_ms": 117.8,
+      "size_mb": 1.39,
+      "build_s": 0.2,
+      "selected": true
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_acctbal"
+      ],
+      "measured_gain_ms": -5.3,
+      "size_mb": 3.23,
+      "build_s": 0.2,
+      "selected": false
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_type",
+        "p_size"
+      ],
+      "measured_gain_ms": 37.4,
+      "size_mb": 1.66,
+      "build_s": 0.3,
+      "selected": true
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_mktsegment"
+      ],
+      "measured_gain_ms": 12.6,
+      "size_mb": 1.02,
+      "build_s": 0.1,
+      "selected": true
+    },
+    {
+      "table": "nation",
+      "columns": [
+        "n_nationkey",
+        "n_regionkey"
+      ],
+      "measured_gain_ms": 22.8,
+      "size_mb": 0.02,
+      "build_s": 0.0,
+      "selected": true
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderkey",
+        "o_orderstatus"
+      ],
+      "measured_gain_ms": 10.5,
+      "size_mb": 45.09,
+      "build_s": 1.4,
+      "selected": true
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_receiptdate"
+      ],
+      "measured_gain_ms": 776.4,
+      "size_mb": 40.72,
+      "build_s": 3.4,
+      "selected": true
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_custkey",
+        "c_nationkey"
+      ],
+      "measured_gain_ms": -16.2,
+      "size_mb": 3.23,
+      "build_s": 0.2,
+      "selected": false
+    }
+  ],
+  "indices": [
+    {
+      "table": "nation",
+      "columns": [
+        "n_nationkey",
+        "n_regionkey"
+      ]
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_size",
+        "p_brand"
+      ]
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_shipdate"
+      ]
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderdate"
+      ]
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_container",
+        "p_brand"
+      ]
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_type",
+        "p_size"
+      ]
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_receiptdate"
+      ]
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_mktsegment"
+      ]
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderkey",
+        "o_orderstatus"
+      ]
+    }
+  ],
+  "measured": {
+    "baseline_ms": 28942.3,
+    "final_ms": 25140.0,
+    "speedup": 1.151,
+    "used_mb": 142.4
+  },
+  "per_query": {
+    "1": {
+      "base_ms": 6806.0,
+      "final_ms": 6835.5
+    },
+    "10": {
+      "base_ms": 1667.4,
+      "final_ms": 1484.5
+    },
+    "11": {
+      "base_ms": 87.7,
+      "final_ms": 87.9
+    },
+    "12": {
+      "base_ms": 1718.0,
+      "final_ms": 850.4
+    },
+    "13": {
+      "base_ms": 1379.4,
+      "final_ms": 1374.2
+    },
+    "14": {
+      "base_ms": 1080.6,
+      "final_ms": 193.9
+    },
+    "15": {
+      "base_ms": 1109.6,
+      "final_ms": 293.2
+    },
+    "16": {
+      "base_ms": 646.6,
+      "final_ms": 617.1
+    },
+    "17": {
+      "base_ms": 1168.9,
+      "final_ms": 1136.9
+    },
+    "18": {
+      "base_ms": 5052.6,
+      "final_ms": 5061.0
+    },
+    "19": {
+      "base_ms": 68.0,
+      "final_ms": 20.5
+    },
+    "2": {
+      "base_ms": 216.5,
+      "final_ms": 179.3
+    },
+    "20": {
+      "base_ms": 508.1,
+      "final_ms": 510.2
+    },
+    "21": {
+      "base_ms": 767.7,
+      "final_ms": 769.2
+    },
+    "22": {
+      "base_ms": 166.2,
+      "final_ms": 166.9
+    },
+    "3": {
+      "base_ms": 774.4,
+      "final_ms": 761.3
+    },
+    "4": {
+      "base_ms": 352.5,
+      "final_ms": 188.4
+    },
+    "5": {
+      "base_ms": 548.4,
+      "final_ms": 329.1
+    },
+    "6": {
+      "base_ms": 1072.6,
+      "final_ms": 541.0
+    },
+    "7": {
+      "base_ms": 638.1,
+      "final_ms": 635.8
+    },
+    "8": {
+      "base_ms": 254.4,
+      "final_ms": 219.8
+    },
+    "9": {
+      "base_ms": 2858.5,
+      "final_ms": 2883.8
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "n_candidates": 43,
+  "n_before_dedupe": 59,
+  "base_bytes": 10580203009,
+  "budget_bytes": 2116040601,
+  "candidates": [
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_shipdate"
+      ],
+      "size_bytes": 1399662320
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_nationkey"
+      ],
+      "size_bytes": 35000000
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_custkey",
+        "c_nationkey"
+      ],
+      "size_bytes": 42000000
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_returnflag"
+      ],
+      "size_bytes": 1259696088
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_orderkey",
+        "l_returnflag"
+      ],
+      "size_bytes": 1819561016
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderdate"
+      ],
+      "size_bytes": 349994680
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_custkey",
+        "o_orderkey"
+      ],
+      "size_bytes": 489992552
+    },
+    {
+      "table": "nation",
+      "columns": [
+        "n_nationkey",
+        "n_name"
+      ],
+      "size_bytes": 1341
+    },
+    {
+      "table": "nation",
+      "columns": [
+        "n_name",
+        "n_nationkey"
+      ],
+      "size_bytes": 1341
+    },
+    {
+      "table": "partsupp",
+      "columns": [
+        "ps_suppkey"
+      ],
+      "size_bytes": 186679103
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_nationkey",
+        "s_suppkey"
+      ],
+      "size_bytes": 2800000
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_commitdate"
+      ],
+      "size_bytes": 1399662320
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderpriority"
+      ],
+      "size_bytes": 559991488
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderkey",
+        "o_orderpriority"
+      ],
+      "size_bytes": 699989360
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_brand"
+      ],
+      "size_bytes": 63000000
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_comment"
+      ],
+      "size_bytes": 9216666
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_container",
+        "p_brand"
+      ],
+      "size_bytes": 88666666
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_partkey",
+        "p_container",
+        "p_brand"
+      ],
+      "size_bytes": 98000000
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_shipinstruct"
+      ],
+      "size_bytes": 2939290872
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_quantity",
+        "l_shipinstruct"
+      ],
+      "size_bytes": 3289206452
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_partkey",
+        "l_shipinstruct"
+      ],
+      "size_bytes": 3219223336
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_size",
+        "p_brand"
+      ],
+      "size_bytes": 72333333
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_partkey",
+        "p_brand"
+      ],
+      "size_bytes": 72333333
+    },
+    {
+      "table": "nation",
+      "columns": [
+        "n_regionkey"
+      ],
+      "size_bytes": 583
+    },
+    {
+      "table": "nation",
+      "columns": [
+        "n_nationkey",
+        "n_regionkey"
+      ],
+      "size_bytes": 700
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_type",
+        "p_size"
+      ],
+      "size_bytes": 95666666
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_partkey",
+        "p_size"
+      ],
+      "size_bytes": 56000000
+    },
+    {
+      "table": "partsupp",
+      "columns": [
+        "ps_partkey",
+        "ps_suppkey"
+      ],
+      "size_bytes": 224014924
+    },
+    {
+      "table": "region",
+      "columns": [
+        "r_regionkey",
+        "r_name"
+      ],
+      "size_bytes": 268
+    },
+    {
+      "table": "region",
+      "columns": [
+        "r_name",
+        "r_regionkey"
+      ],
+      "size_bytes": 268
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_suppkey"
+      ],
+      "size_bytes": 1399662320
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_partkey",
+        "l_suppkey"
+      ],
+      "size_bytes": 1679594784
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_name"
+      ],
+      "size_bytes": 114333333
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_receiptdate"
+      ],
+      "size_bytes": 1399662320
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderkey",
+        "o_orderstatus"
+      ],
+      "size_bytes": 454993084
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_suppkey",
+        "s_nationkey"
+      ],
+      "size_bytes": 2800000
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_acctbal"
+      ],
+      "size_bytes": 38500000
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_mktsegment"
+      ],
+      "size_bytes": 47250000
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_custkey",
+        "c_mktsegment"
+      ],
+      "size_bytes": 54250000
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_orderkey",
+        "l_suppkey"
+      ],
+      "size_bytes": 1959527248
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_discount"
+      ],
+      "size_bytes": 1399662320
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_orderkey",
+        "l_partkey"
+      ],
+      "size_bytes": 1959527248
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_partkey",
+        "p_type"
+      ],
+      "size_bytes": 95666666
+    }
+  ]
+}

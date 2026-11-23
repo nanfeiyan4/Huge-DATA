@@ -1,0 +1,393 @@
+{
+  "scale": "SF10",
+  "rows": [
+    {
+      "budget_pct": 5,
+      "budget_mb": 504.5,
+      "used_mb": 490.01,
+      "n_indexes": 5,
+      "planner_red_pct": 1.92,
+      "speedup": 0.995,
+      "geomean": 1.078,
+      "mismatches": [],
+      "total_base_ms": 427532.6,
+      "total_ms": 429556.0,
+      "per_query": [
+        {
+          "q": "1",
+          "base_ms": 70941.9,
+          "tuned_ms": 71031.6,
+          "speedup": 1.0
+        },
+        {
+          "q": "10",
+          "base_ms": 21011.4,
+          "tuned_ms": 18689.8,
+          "speedup": 1.12
+        },
+        {
+          "q": "11",
+          "base_ms": 945.4,
+          "tuned_ms": 1006.8,
+          "speedup": 0.94
+        },
+        {
+          "q": "12",
+          "base_ms": 19327.0,
+          "tuned_ms": 20212.3,
+          "speedup": 0.96
+        },
+        {
+          "q": "13",
+          "base_ms": 16359.0,
+          "tuned_ms": 16824.3,
+          "speedup": 0.97
+        },
+        {
+          "q": "14",
+          "base_ms": 13483.4,
+          "tuned_ms": 13678.7,
+          "speedup": 0.99
+        },
+        {
+          "q": "15",
+          "base_ms": 13945.2,
+          "tuned_ms": 14303.9,
+          "speedup": 0.97
+        },
+        {
+          "q": "16",
+          "base_ms": 6946.9,
+          "tuned_ms": 6718.4,
+          "speedup": 1.03
+        },
+        {
+          "q": "17",
+          "base_ms": 14986.7,
+          "tuned_ms": 15112.0,
+          "speedup": 0.99
+        },
+        {
+          "q": "18",
+          "base_ms": 73916.4,
+          "tuned_ms": 74526.3,
+          "speedup": 0.99
+        },
+        {
+          "q": "19",
+          "base_ms": 647.0,
+          "tuned_ms": 213.4,
+          "speedup": 3.03
+        },
+        {
+          "q": "2",
+          "base_ms": 2281.1,
+          "tuned_ms": 2022.0,
+          "speedup": 1.13
+        },
+        {
+          "q": "20",
+          "base_ms": 5181.7,
+          "tuned_ms": 5266.0,
+          "speedup": 0.98
+        },
+        {
+          "q": "21",
+          "base_ms": 16313.2,
+          "tuned_ms": 16422.2,
+          "speedup": 0.99
+        },
+        {
+          "q": "22",
+          "base_ms": 1741.7,
+          "tuned_ms": 1755.3,
+          "speedup": 0.99
+        },
+        {
+          "q": "3",
+          "base_ms": 20410.6,
+          "tuned_ms": 20713.0,
+          "speedup": 0.99
+        },
+        {
+          "q": "4",
+          "base_ms": 4601.4,
+          "tuned_ms": 2446.7,
+          "speedup": 1.88
+        },
+        {
+          "q": "5",
+          "base_ms": 34132.0,
+          "tuned_ms": 37848.5,
+          "speedup": 0.9
+        },
+        {
+          "q": "6",
+          "base_ms": 12059.3,
+          "tuned_ms": 12081.4,
+          "speedup": 1.0
+        },
+        {
+          "q": "7",
+          "base_ms": 23149.8,
+          "tuned_ms": 23248.8,
+          "speedup": 1.0
+        },
+        {
+          "q": "8",
+          "base_ms": 2879.8,
+          "tuned_ms": 2891.5,
+          "speedup": 1.0
+        },
+        {
+          "q": "9",
+          "base_ms": 52271.6,
+          "tuned_ms": 52543.2,
+          "speedup": 0.99
+        }
+      ],
+      "indexes": [
+        {
+          "table": "nation",
+          "columns": [
+            "n_nationkey",
+            "n_regionkey"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "supplier",
+          "columns": [
+            "s_suppkey",
+            "s_nationkey"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "part",
+          "columns": [
+            "p_container",
+            "p_brand"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "orders",
+          "columns": [
+            "o_orderdate"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "part",
+          "columns": [
+            "p_size",
+            "p_brand"
+          ],
+          "source": "rule"
+        }
+      ]
+    },
+    {
+      "budget_pct": 20,
+      "budget_mb": 2018.01,
+      "used_mb": 1975.13,
+      "n_indexes": 7,
+      "planner_red_pct": 7.07,
+      "speedup": 1.066,
+      "geomean": 1.166,
+      "mismatches": [],
+      "total_base_ms": 427532.6,
+      "total_ms": 401194.0,
+      "per_query": [
+        {
+          "q": "1",
+          "base_ms": 70941.9,
+          "tuned_ms": 71037.5,
+          "speedup": 1.0
+        },
+        {
+          "q": "10",
+          "base_ms": 21011.4,
+          "tuned_ms": 20397.4,
+          "speedup": 1.03
+        },
+        {
+          "q": "11",
+          "base_ms": 945.4,
+          "tuned_ms": 988.0,
+          "speedup": 0.96
+        },
+        {
+          "q": "12",
+          "base_ms": 19327.0,
+          "tuned_ms": 19870.5,
+          "speedup": 0.97
+        },
+        {
+          "q": "13",
+          "base_ms": 16359.0,
+          "tuned_ms": 16630.4,
+          "speedup": 0.98
+        },
+        {
+          "q": "14",
+          "base_ms": 13483.4,
+          "tuned_ms": 2410.6,
+          "speedup": 5.59
+        },
+        {
+          "q": "15",
+          "base_ms": 13945.2,
+          "tuned_ms": 3827.1,
+          "speedup": 3.64
+        },
+        {
+          "q": "16",
+          "base_ms": 6946.9,
+          "tuned_ms": 6973.4,
+          "speedup": 1.0
+        },
+        {
+          "q": "17",
+          "base_ms": 14986.7,
+          "tuned_ms": 14184.3,
+          "speedup": 1.06
+        },
+        {
+          "q": "18",
+          "base_ms": 73916.4,
+          "tuned_ms": 73274.7,
+          "speedup": 1.01
+        },
+        {
+          "q": "19",
+          "base_ms": 647.0,
+          "tuned_ms": 683.4,
+          "speedup": 0.95
+        },
+        {
+          "q": "2",
+          "base_ms": 2281.1,
+          "tuned_ms": 2387.1,
+          "speedup": 0.96
+        },
+        {
+          "q": "20",
+          "base_ms": 5181.7,
+          "tuned_ms": 5274.5,
+          "speedup": 0.98
+        },
+        {
+          "q": "21",
+          "base_ms": 16313.2,
+          "tuned_ms": 16197.0,
+          "speedup": 1.01
+        },
+        {
+          "q": "22",
+          "base_ms": 1741.7,
+          "tuned_ms": 1663.1,
+          "speedup": 1.05
+        },
+        {
+          "q": "3",
+          "base_ms": 20410.6,
+          "tuned_ms": 20306.5,
+          "speedup": 1.01
+        },
+        {
+          "q": "4",
+          "base_ms": 4601.4,
+          "tuned_ms": 4597.6,
+          "speedup": 1.0
+        },
+        {
+          "q": "5",
+          "base_ms": 34132.0,
+          "tuned_ms": 33768.3,
+          "speedup": 1.01
+        },
+        {
+          "q": "6",
+          "base_ms": 12059.3,
+          "tuned_ms": 8971.5,
+          "speedup": 1.34
+        },
+        {
+          "q": "7",
+          "base_ms": 23149.8,
+          "tuned_ms": 23089.6,
+          "speedup": 1.0
+        },
+        {
+          "q": "8",
+          "base_ms": 2879.8,
+          "tuned_ms": 2563.6,
+          "speedup": 1.12
+        },
+        {
+          "q": "9",
+          "base_ms": 52271.6,
+          "tuned_ms": 52097.9,
+          "speedup": 1.0
+        }
+      ],
+      "indexes": [
+        {
+          "table": "nation",
+          "columns": [
+            "n_nationkey",
+            "n_regionkey"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "lineitem",
+          "columns": [
+            "l_shipdate"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "part",
+          "columns": [
+            "p_type",
+            "p_size"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "customer",
+          "columns": [
+            "c_acctbal"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "customer",
+          "columns": [
+            "c_mktsegment"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "orders",
+          "columns": [
+            "o_custkey",
+            "o_orderkey"
+          ],
+          "source": "rule"
+        },
+        {
+          "table": "nation",
+          "columns": [
+            "n_nationkey",
+            "n_name"
+          ],
+          "source": "rule"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "n_selected": 5,
+  "used_bytes": 513814979,
+  "used_mb": 490.01,
+  "budget_mb": 504.5,
+  "base_cost": 40044178.6,
+  "final_cost": 39277000.7,
+  "cost_reduction_pct": 1.92,
+  "evals": 831,
+  "indexes": [
+    {
+      "table": "nation",
+      "columns": [
+        "n_nationkey",
+        "n_regionkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_suppkey",
+        "s_nationkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_container",
+        "p_brand"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderdate"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_size",
+        "p_brand"
+      ],
+      "source": "rule"
+    }
+  ],
+  "steps": [
+    {
+      "iteration": 1,
+      "candidate": "nation_n_nationkey_n_regionkey",
+      "gain": 1195.609999999986,
+      "ratio": 1.7080142857142657,
+      "size_bytes": 700,
+      "cost_after": 40042983.03
+    },
+    {
+      "iteration": 2,
+      "candidate": "supplier_s_suppkey_s_nationkey",
+      "gain": 7968.25,
+      "ratio": 0.0028458035714285716,
+      "size_bytes": 2800000,
+      "cost_after": 40035014.78
+    },
+    {
+      "iteration": 3,
+      "candidate": "part_p_container_p_brand",
+      "gain": 154419.00000000023,
+      "ratio": 0.0017415676822674288,
+      "size_bytes": 88666666,
+      "cost_after": 39880595.78
+    },
+    {
+      "iteration": 4,
+      "candidate": "orders_o_orderdate",
+      "gain": 544494.5199999997,
+      "ratio": 0.0015556351586569544,
+      "size_bytes": 350014280,
+      "cost_after": 39336101.26
+    },
+    {
+      "iteration": 5,
+      "candidate": "part_p_size_p_brand",
+      "gain": 59100.52000000002,
+      "ratio": 0.0008170578839495758,
+      "size_bytes": 72333333,
+      "cost_after": 39277000.74
+    }
+  ]
+}

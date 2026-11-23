@@ -1,0 +1,180 @@
+{
+  "indices": [
+    {
+      "table": "nation",
+      "columns": [
+        "n_name",
+        "n_nationkey"
+      ]
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_shipdate"
+      ]
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_container",
+        "p_brand"
+      ]
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderdate"
+      ]
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_suppkey",
+        "s_nationkey"
+      ]
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_size",
+        "p_brand"
+      ]
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_receiptdate"
+      ]
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderkey",
+        "o_orderstatus"
+      ]
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_custkey",
+        "c_nationkey"
+      ]
+    }
+  ],
+  "per_query": {
+    "1": {
+      "cost_base": 397530.83,
+      "cost_tuned": 397530.83,
+      "cost_ratio": 1.0
+    },
+    "10": {
+      "cost_base": 255936.07,
+      "cost_tuned": 235586.42,
+      "cost_ratio": 0.9205
+    },
+    "11": {
+      "cost_base": 10335.82,
+      "cost_tuned": 10335.82,
+      "cost_ratio": 1.0
+    },
+    "12": {
+      "cost_base": 308965.51,
+      "cost_tuned": 212656.87,
+      "cost_ratio": 0.6883
+    },
+    "13": {
+      "cost_base": 67712.15,
+      "cost_tuned": 67712.15,
+      "cost_ratio": 1.0
+    },
+    "14": {
+      "cost_base": 215676.44,
+      "cost_tuned": 119933.78,
+      "cost_ratio": 0.5561
+    },
+    "15": {
+      "cost_base": 208769.44,
+      "cost_tuned": 127568.11,
+      "cost_ratio": 0.611
+    },
+    "16": {
+      "cost_base": 45229.82,
+      "cost_tuned": 42019.95,
+      "cost_ratio": 0.929
+    },
+    "17": {
+      "cost_base": 199721.32,
+      "cost_tuned": 193265.34,
+      "cost_ratio": 0.9677
+    },
+    "18": {
+      "cost_base": 596696.63,
+      "cost_tuned": 596696.63,
+      "cost_ratio": 1.0
+    },
+    "19": {
+      "cost_base": 72760.33,
+      "cost_tuned": 64057.11,
+      "cost_ratio": 0.8804
+    },
+    "2": {
+      "cost_base": 48751.15,
+      "cost_tuned": 45641.93,
+      "cost_ratio": 0.9362
+    },
+    "20": {
+      "cost_base": 204820.01,
+      "cost_tuned": 204820.01,
+      "cost_ratio": 1.0
+    },
+    "21": {
+      "cost_base": 83356.99,
+      "cost_tuned": 65129.49,
+      "cost_ratio": 0.7813
+    },
+    "22": {
+      "cost_base": 23410.09,
+      "cost_tuned": 23410.09,
+      "cost_ratio": 1.0
+    },
+    "3": {
+      "cost_base": 251724.32,
+      "cost_tuned": 251724.32,
+      "cost_ratio": 1.0
+    },
+    "4": {
+      "cost_base": 236396.0,
+      "cost_tuned": 216076.57,
+      "cost_ratio": 0.914
+    },
+    "5": {
+      "cost_base": 178377.05,
+      "cost_tuned": 168713.05,
+      "cost_ratio": 0.9458
+    },
+    "6": {
+      "cost_base": 251139.42,
+      "cost_tuned": 157041.0,
+      "cost_ratio": 0.6253
+    },
+    "7": {
+      "cost_base": 79989.89,
+      "cost_tuned": 80388.47,
+      "cost_ratio": 1.005
+    },
+    "8": {
+      "cost_base": 190760.46,
+      "cost_tuned": 173216.94,
+      "cost_ratio": 0.908
+    },
+    "9": {
+      "cost_base": 98326.37,
+      "cost_tuned": 98303.66,
+      "cost_ratio": 0.9998
+    }
+  },
+  "total": {
+    "cost_base": 4026386.11,
+    "cost_tuned": 3551828.54
+  }
+}

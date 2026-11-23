@@ -1,0 +1,5 @@
+# Python dependencies for the index-advisor lab
+psycopg[binary]>=3.1
+duckdb>=1.0        # only needed for the TPC-H data generation path
+matplotlib>=3.8    # report figures
+pandas>=2.1        # result aggregation

@@ -1,0 +1,155 @@
+{
+  "n_selected": 9,
+  "used_bytes": 381138040,
+  "used_mb": 363.48,
+  "budget_mb": 403.72,
+  "base_cost": 4017013.2,
+  "final_cost": 3544370.5,
+  "cost_reduction_pct": 11.77,
+  "evals": 2605,
+  "indexes": [
+    {
+      "table": "nation",
+      "columns": [
+        "n_name",
+        "n_nationkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_shipdate"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_container",
+        "p_brand"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderdate"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_suppkey",
+        "s_nationkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_size",
+        "p_brand"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_receiptdate"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderkey",
+        "o_orderstatus"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_custkey",
+        "c_nationkey"
+      ],
+      "source": "rule"
+    }
+  ],
+  "steps": [
+    {
+      "iteration": 1,
+      "candidate": "nation_n_name_n_nationkey",
+      "gain": 4.119999999995343,
+      "ratio": 0.003072334079042016,
+      "size_bytes": 1341,
+      "cost_after": 4017009.06
+    },
+    {
+      "iteration": 2,
+      "candidate": "lineitem_l_shipdate",
+      "gain": 269638.43,
+      "ratio": 0.0019255988519467665,
+      "size_bytes": 140028350,
+      "cost_after": 3747370.63
+    },
+    {
+      "iteration": 3,
+      "candidate": "part_p_container_p_brand",
+      "gain": 15189.110000000015,
+      "ratio": 0.0017130576475983211,
+      "size_bytes": 8866666,
+      "cost_after": 3732181.52
+    },
+    {
+      "iteration": 4,
+      "candidate": "orders_o_orderdate",
+      "gain": 50227.169999999955,
+      "ratio": 0.0014350619999999987,
+      "size_bytes": 35000000,
+      "cost_after": 3681954.35
+    },
+    {
+      "iteration": 5,
+      "candidate": "supplier_s_suppkey_s_nationkey",
+      "gain": 392.13000000000466,
+      "ratio": 0.0014004642857143024,
+      "size_bytes": 280000,
+      "cost_after": 3681562.22
+    },
+    {
+      "iteration": 6,
+      "candidate": "part_p_size_p_brand",
+      "gain": 6123.5199999999895,
+      "ratio": 0.0008465696242658799,
+      "size_bytes": 7233333,
+      "cost_after": 3675438.7
+    },
+    {
+      "iteration": 7,
+      "candidate": "lineitem_l_receiptdate",
+      "gain": 95481.39999999997,
+      "ratio": 0.0006818719209360102,
+      "size_bytes": 140028350,
+      "cost_after": 3579957.3000000003
+    },
+    {
+      "iteration": 8,
+      "candidate": "orders_o_orderkey_o_orderstatus",
+      "gain": 18088.25,
+      "ratio": 0.00039754395604395606,
+      "size_bytes": 45500000,
+      "cost_after": 3561869.0500000003
+    },
+    {
+      "iteration": 9,
+      "candidate": "part_p_brand",
+      "gain": 16020.300000000017,
+      "ratio": 0.002542904761904765,
+      "size_bytes": 6300000,
+      "cost_after": 3545848.75
+    }
+  ]
+}

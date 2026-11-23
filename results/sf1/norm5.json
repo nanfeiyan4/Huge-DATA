@@ -1,0 +1,124 @@
+{
+  "n_selected": 7,
+  "used_bytes": 34522365,
+  "used_mb": 32.92,
+  "budget_mb": 50.5,
+  "base_cost": 3907594.8,
+  "final_cost": 3879572.8,
+  "cost_reduction_pct": 0.72,
+  "evals": 1087,
+  "indexes": [
+    {
+      "table": "nation",
+      "columns": [
+        "n_nationkey",
+        "n_regionkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_suppkey",
+        "s_nationkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_size",
+        "p_brand"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_acctbal"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_container",
+        "p_brand"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_type",
+        "p_size"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "customer",
+      "columns": [
+        "c_mktsegment"
+      ],
+      "source": "rule"
+    }
+  ],
+  "steps": [
+    {
+      "iteration": 1,
+      "candidate": "nation_n_nationkey_n_regionkey",
+      "gain": 0.0029216818111408196,
+      "ratio": 4.173831158772599e-06,
+      "size_bytes": 700,
+      "cost_after": 3907675.0
+    },
+    {
+      "iteration": 2,
+      "candidate": "supplier_s_suppkey_s_nationkey",
+      "gain": 0.00795078545768553,
+      "ratio": 2.8395662348876893e-08,
+      "size_bytes": 280000,
+      "cost_after": 3907287.0
+    },
+    {
+      "iteration": 3,
+      "candidate": "part_p_size_p_brand",
+      "gain": 0.17891980818929748,
+      "ratio": 2.473545849324198e-08,
+      "size_bytes": 7233333,
+      "cost_after": 3897136.29
+    },
+    {
+      "iteration": 4,
+      "candidate": "customer_c_acctbal",
+      "gain": 0.06590481599980215,
+      "ratio": 1.7118134025922637e-08,
+      "size_bytes": 3850000,
+      "cost_after": 3895590.77
+    },
+    {
+      "iteration": 5,
+      "candidate": "part_p_container_p_brand",
+      "gain": 0.1032748001539306,
+      "ratio": 1.1647534727701551e-08,
+      "size_bytes": 8866666,
+      "cost_after": 3883962.32
+    },
+    {
+      "iteration": 6,
+      "candidate": "part_p_type_p_size",
+      "gain": 0.019278720939599436,
+      "ratio": 2.015197451191401e-09,
+      "size_bytes": 9566666,
+      "cost_after": 3880317.4
+    },
+    {
+      "iteration": 7,
+      "candidate": "customer_c_mktsegment",
+      "gain": 0.002958211498176977,
+      "ratio": 6.26076507550683e-10,
+      "size_bytes": 4725000,
+      "cost_after": 3879572.82
+    }
+  ]
+}

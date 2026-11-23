@@ -1,0 +1,20 @@
+{
+  "db": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dbname": "idxlab",
+    "user": "idxlab",
+    "password": "idxlab"
+  },
+  "paths": {
+    "workload": "/root/idx_lab/workload/tpch",
+    "ddl": "/root/idx_lab/workload/tpch/schema.sql",
+    "out": "/root/idx_lab/out"
+  },
+  "measure": {
+    "warmup": 1,
+    "repeats": 3,
+    "timeout_ms": 300000
+  },
+  "drop_advisor_indexes": true
+}

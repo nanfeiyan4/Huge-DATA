@@ -1,0 +1,93 @@
+{
+  "n_selected": 5,
+  "used_bytes": 185810391,
+  "used_mb": 177.2,
+  "budget_mb": 202.01,
+  "base_cost": 3652777.1,
+  "final_cost": 3521933.8,
+  "cost_reduction_pct": 3.58,
+  "evals": 1356,
+  "indexes": [
+    {
+      "table": "nation",
+      "columns": [
+        "n_nationkey",
+        "n_regionkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_suppkey",
+        "s_nationkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderkey",
+        "o_orderstatus"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_receiptdate"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "nation",
+      "columns": [
+        "n_name",
+        "n_nationkey"
+      ],
+      "source": "rule"
+    }
+  ],
+  "steps": [
+    {
+      "iteration": 1,
+      "candidate": "nation_n_nationkey_n_regionkey",
+      "gain": 0.0030592019747682346,
+      "ratio": 4.3702885353831925e-06,
+      "size_bytes": 700,
+      "cost_after": 3652862.79
+    },
+    {
+      "iteration": 2,
+      "candidate": "supplier_s_suppkey_s_nationkey",
+      "gain": 0.00847148975372231,
+      "ratio": 3.0255320549008254e-08,
+      "size_bytes": 280000,
+      "cost_after": 3652471.79
+    },
+    {
+      "iteration": 3,
+      "candidate": "orders_o_orderkey_o_orderstatus",
+      "gain": 0.2181716961259667,
+      "ratio": 4.7949823324388285e-09,
+      "size_bytes": 45500000,
+      "cost_after": 3634311.4899999998
+    },
+    {
+      "iteration": 4,
+      "candidate": "part_p_brand",
+      "gain": 0.09163273143386864,
+      "ratio": 1.4544878005375976e-08,
+      "size_bytes": 6300000,
+      "cost_after": 3617127.19
+    },
+    {
+      "iteration": 5,
+      "candidate": "lineitem_l_receiptdate",
+      "gain": 0.3097901154873067,
+      "ratio": 2.212338540640568e-09,
+      "size_bytes": 140028350,
+      "cost_after": 3521401.18
+    }
+  ]
+}

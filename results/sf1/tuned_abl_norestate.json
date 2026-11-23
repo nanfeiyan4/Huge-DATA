@@ -1,0 +1,261 @@
+{
+  "tag": "tuned_abl_norestate",
+  "created_indexes": [
+    "ix_nation_n_name_n_nationkey",
+    "ix_supplier_s_suppkey_s_nationkey",
+    "ix_lineitem_l_partkey_l_suppkey",
+    "ix_customer_c_acctbal",
+    "ix_part_p_type_p_size",
+    "ix_customer_c_mktsegment"
+  ],
+  "summary": {
+    "n_queries": 22,
+    "n_timeouts": 0,
+    "total_ms": 28704.4,
+    "median_of_medians_ms": 768.1
+  },
+  "results": {
+    "1": {
+      "qid": "1",
+      "median_ms": 6883.12,
+      "times_ms": [
+        6883.12,
+        6882.59,
+        6926.68
+      ],
+      "digest": "be05d6ca62ecfcbc793d46449b1c20ae",
+      "timed_out": false
+    },
+    "10": {
+      "qid": "10",
+      "median_ms": 1674.11,
+      "times_ms": [
+        1679.6,
+        1674.11,
+        1667.12
+      ],
+      "digest": "1eff4f1393dc4fd2780830256c44e529",
+      "timed_out": false
+    },
+    "11": {
+      "qid": "11",
+      "median_ms": 89.69,
+      "times_ms": [
+        90.68,
+        89.69,
+        88.68
+      ],
+      "digest": "9dadc17b250f05c8782cdfeab888da27",
+      "timed_out": false
+    },
+    "12": {
+      "qid": "12",
+      "median_ms": 1734.06,
+      "times_ms": [
+        1734.06,
+        1725.74,
+        1741.72
+      ],
+      "digest": "e0680c1d9a3c41125d3aba42f7e33f74",
+      "timed_out": false
+    },
+    "13": {
+      "qid": "13",
+      "median_ms": 1392.95,
+      "times_ms": [
+        1396.91,
+        1392.95,
+        1386.32
+      ],
+      "digest": "54b0e708a98f27b7282a24fcc2c3b7d7",
+      "timed_out": false
+    },
+    "14": {
+      "qid": "14",
+      "median_ms": 1076.56,
+      "times_ms": [
+        1076.26,
+        1076.56,
+        1076.72
+      ],
+      "digest": "020ac10a6d0458a6fcade3d786464545",
+      "timed_out": false
+    },
+    "15": {
+      "qid": "15",
+      "median_ms": 1109.64,
+      "times_ms": [
+        1109.64,
+        1110.7,
+        1107.61
+      ],
+      "digest": "7fdc67b291bdb47a0de9b3d29a465d8b",
+      "timed_out": false
+    },
+    "16": {
+      "qid": "16",
+      "median_ms": 650.68,
+      "times_ms": [
+        652.42,
+        650.68,
+        650.64
+      ],
+      "digest": "498ece365748c0b1fbc7f506a9fc10a7",
+      "timed_out": false
+    },
+    "17": {
+      "qid": "17",
+      "median_ms": 1167.56,
+      "times_ms": [
+        1167.91,
+        1163.77,
+        1167.56
+      ],
+      "digest": "1ed8f520d3e7966e97c46cff0ebfcb1a",
+      "timed_out": false
+    },
+    "18": {
+      "qid": "18",
+      "median_ms": 5078.25,
+      "times_ms": [
+        5081.85,
+        5072.35,
+        5078.25
+      ],
+      "digest": "f01f44d2d59aec740bb1358fb65b306a",
+      "timed_out": false
+    },
+    "19": {
+      "qid": "19",
+      "median_ms": 68.49,
+      "times_ms": [
+        68.53,
+        68.49,
+        68.08
+      ],
+      "digest": "74f7bf74da70d53a5decce496b75d4d6",
+      "timed_out": false
+    },
+    "2": {
+      "qid": "2",
+      "median_ms": 216.92,
+      "times_ms": [
+        216.92,
+        216.23,
+        217.04
+      ],
+      "digest": "df243d03776967dead07184124ed75af",
+      "timed_out": false
+    },
+    "20": {
+      "qid": "20",
+      "median_ms": 120.14,
+      "times_ms": [
+        120.23,
+        119.33,
+        120.14
+      ],
+      "digest": "4ace20b0c1b4df1c923ac5e7b8350587",
+      "timed_out": false
+    },
+    "21": {
+      "qid": "21",
+      "median_ms": 770.44,
+      "times_ms": [
+        770.44,
+        778.38,
+        768.92
+      ],
+      "digest": "a80b43a0989c7393a354560e54da2a16",
+      "timed_out": false
+    },
+    "22": {
+      "qid": "22",
+      "median_ms": 154.13,
+      "times_ms": [
+        154.13,
+        153.48,
+        154.14
+      ],
+      "digest": "8656cb7cda404fce73ab019e461586e5",
+      "timed_out": false
+    },
+    "3": {
+      "qid": "3",
+      "median_ms": 765.85,
+      "times_ms": [
+        765.41,
+        769.28,
+        765.85
+      ],
+      "digest": "264c6b34de1c5bd96be44b6b16a33ea6",
+      "timed_out": false
+    },
+    "4": {
+      "qid": "4",
+      "median_ms": 354.17,
+      "times_ms": [
+        354.22,
+        353.78,
+        354.17
+      ],
+      "digest": "047846fd59caf6cb508d1287453f5843",
+      "timed_out": false
+    },
+    "5": {
+      "qid": "5",
+      "median_ms": 551.83,
+      "times_ms": [
+        546.95,
+        551.83,
+        560.62
+      ],
+      "digest": "322b9c1b5d82d388bf04bbdfc72c54e2",
+      "timed_out": false
+    },
+    "6": {
+      "qid": "6",
+      "median_ms": 1082.94,
+      "times_ms": [
+        1082.98,
+        1082.94,
+        1082.37
+      ],
+      "digest": "89c9dca713f5f646878f63c52c6576de",
+      "timed_out": false
+    },
+    "7": {
+      "qid": "7",
+      "median_ms": 641.19,
+      "times_ms": [
+        641.38,
+        640.35,
+        641.19
+      ],
+      "digest": "ebdb502f158cedffc7b0fcdfb0fd099f",
+      "timed_out": false
+    },
+    "8": {
+      "qid": "8",
+      "median_ms": 222.5,
+      "times_ms": [
+        220.99,
+        228.67,
+        222.5
+      ],
+      "digest": "d9009e1ffc57831634bdde92949b0d9d",
+      "timed_out": false
+    },
+    "9": {
+      "qid": "9",
+      "median_ms": 2899.18,
+      "times_ms": [
+        2884.97,
+        2901.0,
+        2899.18
+      ],
+      "digest": "3555c716825746705eb8f16c3519adab",
+      "timed_out": false
+    }
+  }
+}

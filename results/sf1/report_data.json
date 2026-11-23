@@ -1,0 +1,739 @@
+{
+  "rq1": {
+    "total_base_ms": 28886.6,
+    "total_ms": 26327.7,
+    "speedup": 1.097,
+    "geomean": 1.34,
+    "mismatches": [],
+    "per_query": [
+      {
+        "q": "1",
+        "base_ms": 6809.9,
+        "tuned_ms": 6830.2,
+        "speedup": 1.0
+      },
+      {
+        "q": "10",
+        "base_ms": 1640.1,
+        "tuned_ms": 1472.2,
+        "speedup": 1.11
+      },
+      {
+        "q": "11",
+        "base_ms": 88.0,
+        "tuned_ms": 87.1,
+        "speedup": 1.01
+      },
+      {
+        "q": "12",
+        "base_ms": 1720.6,
+        "tuned_ms": 1728.6,
+        "speedup": 1.0
+      },
+      {
+        "q": "13",
+        "base_ms": 1356.9,
+        "tuned_ms": 1370.0,
+        "speedup": 0.99
+      },
+      {
+        "q": "14",
+        "base_ms": 1075.8,
+        "tuned_ms": 197.0,
+        "speedup": 5.46
+      },
+      {
+        "q": "15",
+        "base_ms": 1106.6,
+        "tuned_ms": 295.0,
+        "speedup": 3.75
+      },
+      {
+        "q": "16",
+        "base_ms": 645.2,
+        "tuned_ms": 619.5,
+        "speedup": 1.04
+      },
+      {
+        "q": "17",
+        "base_ms": 1167.2,
+        "tuned_ms": 1129.8,
+        "speedup": 1.03
+      },
+      {
+        "q": "18",
+        "base_ms": 5048.1,
+        "tuned_ms": 5088.2,
+        "speedup": 0.99
+      },
+      {
+        "q": "19",
+        "base_ms": 67.9,
+        "tuned_ms": 20.4,
+        "speedup": 3.32
+      },
+      {
+        "q": "2",
+        "base_ms": 216.8,
+        "tuned_ms": 179.1,
+        "speedup": 1.21
+      },
+      {
+        "q": "20",
+        "base_ms": 507.0,
+        "tuned_ms": 508.5,
+        "speedup": 1.0
+      },
+      {
+        "q": "21",
+        "base_ms": 767.0,
+        "tuned_ms": 771.9,
+        "speedup": 0.99
+      },
+      {
+        "q": "22",
+        "base_ms": 166.7,
+        "tuned_ms": 153.7,
+        "speedup": 1.08
+      },
+      {
+        "q": "3",
+        "base_ms": 786.2,
+        "tuned_ms": 776.3,
+        "speedup": 1.01
+      },
+      {
+        "q": "4",
+        "base_ms": 353.0,
+        "tuned_ms": 191.7,
+        "speedup": 1.84
+      },
+      {
+        "q": "5",
+        "base_ms": 547.6,
+        "tuned_ms": 349.7,
+        "speedup": 1.57
+      },
+      {
+        "q": "6",
+        "base_ms": 1074.6,
+        "tuned_ms": 549.2,
+        "speedup": 1.96
+      },
+      {
+        "q": "7",
+        "base_ms": 642.5,
+        "tuned_ms": 637.2,
+        "speedup": 1.01
+      },
+      {
+        "q": "8",
+        "base_ms": 252.2,
+        "tuned_ms": 220.8,
+        "speedup": 1.14
+      },
+      {
+        "q": "9",
+        "base_ms": 2846.7,
+        "tuned_ms": 3151.5,
+        "speedup": 0.9
+      }
+    ],
+    "n_indexes": 9,
+    "used_mb": 199.84,
+    "budget_mb": 202.01,
+    "planner_red_pct": 8.67,
+    "evals": 1640,
+    "indexes": [
+      {
+        "table": "nation",
+        "columns": [
+          "n_name",
+          "n_nationkey"
+        ],
+        "source": "rule"
+      },
+      {
+        "table": "supplier",
+        "columns": [
+          "s_suppkey",
+          "s_nationkey"
+        ],
+        "source": "rule"
+      },
+      {
+        "table": "lineitem",
+        "columns": [
+          "l_shipdate"
+        ],
+        "source": "rule"
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_container",
+          "p_brand"
+        ],
+        "source": "rule"
+      },
+      {
+        "table": "orders",
+        "columns": [
+          "o_orderdate"
+        ],
+        "source": "rule"
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_size",
+          "p_brand"
+        ],
+        "source": "rule"
+      },
+      {
+        "table": "customer",
+        "columns": [
+          "c_acctbal"
+        ],
+        "source": "rule"
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_type",
+          "p_size"
+        ],
+        "source": "rule"
+      },
+      {
+        "table": "customer",
+        "columns": [
+          "c_mktsegment"
+        ],
+        "source": "rule"
+      }
+    ]
+  },
+  "rq2": {
+    "rows": [
+      {
+        "budget_pct": 5,
+        "budget_mb": 50.5,
+        "used_mb": 49.0,
+        "n_indexes": 5,
+        "planner_red_pct": 1.82,
+        "speedup": 1.013,
+        "geomean": 1.127
+      },
+      {
+        "budget_pct": 10,
+        "budget_mb": 101.01,
+        "used_mb": 64.97,
+        "n_indexes": 7,
+        "planner_red_pct": 1.09,
+        "speedup": 0.988,
+        "geomean": 1.012
+      },
+      {
+        "budget_pct": 20,
+        "budget_mb": 202.01,
+        "used_mb": 199.84,
+        "n_indexes": 9,
+        "planner_red_pct": 8.67,
+        "speedup": 1.097,
+        "geomean": 1.34
+      },
+      {
+        "budget_pct": 40,
+        "budget_mb": 403.72,
+        "used_mb": 363.48,
+        "n_indexes": 9,
+        "planner_red_pct": 11.77,
+        "speedup": 1.136,
+        "geomean": 1.38
+      }
+    ]
+  },
+  "rq3": {
+    "20": {
+      "spearman": 0.921,
+      "planner_red_pct": 8.68,
+      "measured_speedup": 1.097,
+      "points": [
+        {
+          "q": "1",
+          "cost_ratio": 1.0,
+          "speedup": 1.0
+        },
+        {
+          "q": "10",
+          "cost_ratio": 0.9205,
+          "speedup": 1.11
+        },
+        {
+          "q": "11",
+          "cost_ratio": 1.0,
+          "speedup": 1.01
+        },
+        {
+          "q": "12",
+          "cost_ratio": 1.0,
+          "speedup": 1.0
+        },
+        {
+          "q": "13",
+          "cost_ratio": 1.0,
+          "speedup": 0.99
+        },
+        {
+          "q": "14",
+          "cost_ratio": 0.5561,
+          "speedup": 5.46
+        },
+        {
+          "q": "15",
+          "cost_ratio": 0.611,
+          "speedup": 3.75
+        },
+        {
+          "q": "16",
+          "cost_ratio": 0.929,
+          "speedup": 1.04
+        },
+        {
+          "q": "17",
+          "cost_ratio": 0.9677,
+          "speedup": 1.03
+        },
+        {
+          "q": "18",
+          "cost_ratio": 1.0,
+          "speedup": 0.99
+        },
+        {
+          "q": "19",
+          "cost_ratio": 0.8804,
+          "speedup": 3.32
+        },
+        {
+          "q": "2",
+          "cost_ratio": 0.9362,
+          "speedup": 1.21
+        },
+        {
+          "q": "20",
+          "cost_ratio": 1.0,
+          "speedup": 1.0
+        },
+        {
+          "q": "21",
+          "cost_ratio": 1.0,
+          "speedup": 0.99
+        },
+        {
+          "q": "22",
+          "cost_ratio": 0.934,
+          "speedup": 1.08
+        },
+        {
+          "q": "3",
+          "cost_ratio": 0.997,
+          "speedup": 1.01
+        },
+        {
+          "q": "4",
+          "cost_ratio": 0.914,
+          "speedup": 1.84
+        },
+        {
+          "q": "5",
+          "cost_ratio": 0.9458,
+          "speedup": 1.57
+        },
+        {
+          "q": "6",
+          "cost_ratio": 0.6253,
+          "speedup": 1.96
+        },
+        {
+          "q": "7",
+          "cost_ratio": 0.997,
+          "speedup": 1.01
+        },
+        {
+          "q": "8",
+          "cost_ratio": 0.9775,
+          "speedup": 1.14
+        },
+        {
+          "q": "9",
+          "cost_ratio": 1.0002,
+          "speedup": 0.9
+        }
+      ]
+    },
+    "40": {
+      "spearman": 0.729,
+      "planner_red_pct": 11.79,
+      "measured_speedup": 1.136,
+      "points": [
+        {
+          "q": "1",
+          "cost_ratio": 1.0,
+          "speedup": 1.0
+        },
+        {
+          "q": "10",
+          "cost_ratio": 0.9205,
+          "speedup": 1.09
+        },
+        {
+          "q": "11",
+          "cost_ratio": 1.0,
+          "speedup": 1.01
+        },
+        {
+          "q": "12",
+          "cost_ratio": 0.6883,
+          "speedup": 2.06
+        },
+        {
+          "q": "13",
+          "cost_ratio": 1.0,
+          "speedup": 1.0
+        },
+        {
+          "q": "14",
+          "cost_ratio": 0.5561,
+          "speedup": 5.63
+        },
+        {
+          "q": "15",
+          "cost_ratio": 0.611,
+          "speedup": 3.73
+        },
+        {
+          "q": "16",
+          "cost_ratio": 0.929,
+          "speedup": 1.05
+        },
+        {
+          "q": "17",
+          "cost_ratio": 0.9677,
+          "speedup": 1.03
+        },
+        {
+          "q": "18",
+          "cost_ratio": 1.0,
+          "speedup": 1.0
+        },
+        {
+          "q": "19",
+          "cost_ratio": 0.8804,
+          "speedup": 3.38
+        },
+        {
+          "q": "2",
+          "cost_ratio": 0.9362,
+          "speedup": 1.21
+        },
+        {
+          "q": "20",
+          "cost_ratio": 1.0,
+          "speedup": 1.0
+        },
+        {
+          "q": "21",
+          "cost_ratio": 0.7813,
+          "speedup": 1.0
+        },
+        {
+          "q": "22",
+          "cost_ratio": 1.0,
+          "speedup": 1.01
+        },
+        {
+          "q": "3",
+          "cost_ratio": 1.0,
+          "speedup": 1.01
+        },
+        {
+          "q": "4",
+          "cost_ratio": 0.914,
+          "speedup": 1.88
+        },
+        {
+          "q": "5",
+          "cost_ratio": 0.9458,
+          "speedup": 1.65
+        },
+        {
+          "q": "6",
+          "cost_ratio": 0.6253,
+          "speedup": 1.99
+        },
+        {
+          "q": "7",
+          "cost_ratio": 1.005,
+          "speedup": 1.01
+        },
+        {
+          "q": "8",
+          "cost_ratio": 0.908,
+          "speedup": 1.0
+        },
+        {
+          "q": "9",
+          "cost_ratio": 0.9998,
+          "speedup": 0.9
+        }
+      ]
+    }
+  },
+  "rq4": {
+    "rows": [
+      {
+        "label": "完整方法（增量重估 + 冗余消除）",
+        "n_indexes": 9,
+        "used_mb": 199.84,
+        "planner_red_pct": 8.67,
+        "speedup": 1.097,
+        "geomean": 1.34
+      },
+      {
+        "label": "去掉增量重估",
+        "n_indexes": 6,
+        "used_mb": 177.82,
+        "planner_red_pct": 4.01,
+        "speedup": 1.006,
+        "geomean": 1.071
+      },
+      {
+        "label": "去掉前缀冗余消除",
+        "n_indexes": 7,
+        "used_mb": 197.85,
+        "planner_red_pct": 9.05,
+        "speedup": 1.089,
+        "geomean": 1.311
+      },
+      {
+        "label": "目标函数改为归一化相对收益",
+        "n_indexes": 5,
+        "used_mb": 177.2,
+        "planner_red_pct": 3.58,
+        "speedup": 1.018,
+        "geomean": 1.027
+      }
+    ]
+  },
+  "rq5": {
+    "selected": [
+      {
+        "table": "nation",
+        "columns": [
+          "n_nationkey",
+          "n_regionkey"
+        ]
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_size",
+          "p_brand"
+        ]
+      },
+      {
+        "table": "lineitem",
+        "columns": [
+          "l_shipdate"
+        ]
+      },
+      {
+        "table": "orders",
+        "columns": [
+          "o_orderdate"
+        ]
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_container",
+          "p_brand"
+        ]
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_type",
+          "p_size"
+        ]
+      },
+      {
+        "table": "lineitem",
+        "columns": [
+          "l_receiptdate"
+        ]
+      },
+      {
+        "table": "customer",
+        "columns": [
+          "c_mktsegment"
+        ]
+      },
+      {
+        "table": "orders",
+        "columns": [
+          "o_orderkey",
+          "o_orderstatus"
+        ]
+      }
+    ],
+    "measured": {
+      "baseline_ms": 28942.3,
+      "final_ms": 25140.0,
+      "speedup": 1.151,
+      "used_mb": 142.4
+    },
+    "candidates": [
+      {
+        "table": "lineitem",
+        "columns": [
+          "l_shipdate"
+        ],
+        "measured_gain_ms": 2131.8,
+        "size_mb": 40.72,
+        "build_s": 3.3,
+        "selected": true
+      },
+      {
+        "table": "lineitem",
+        "columns": [
+          "l_receiptdate"
+        ],
+        "measured_gain_ms": 776.4,
+        "size_mb": 40.72,
+        "build_s": 3.4,
+        "selected": true
+      },
+      {
+        "table": "orders",
+        "columns": [
+          "o_orderdate"
+        ],
+        "measured_gain_ms": 521.1,
+        "size_mb": 10.38,
+        "build_s": 0.9,
+        "selected": true
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_size",
+          "p_brand"
+        ],
+        "measured_gain_ms": 117.8,
+        "size_mb": 1.39,
+        "build_s": 0.2,
+        "selected": true
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_container",
+          "p_brand"
+        ],
+        "measured_gain_ms": 52.5,
+        "size_mb": 1.41,
+        "build_s": 0.3,
+        "selected": true
+      },
+      {
+        "table": "part",
+        "columns": [
+          "p_type",
+          "p_size"
+        ],
+        "measured_gain_ms": 37.4,
+        "size_mb": 1.66,
+        "build_s": 0.3,
+        "selected": true
+      },
+      {
+        "table": "nation",
+        "columns": [
+          "n_nationkey",
+          "n_regionkey"
+        ],
+        "measured_gain_ms": 22.8,
+        "size_mb": 0.02,
+        "build_s": 0.0,
+        "selected": true
+      },
+      {
+        "table": "customer",
+        "columns": [
+          "c_mktsegment"
+        ],
+        "measured_gain_ms": 12.6,
+        "size_mb": 1.02,
+        "build_s": 0.1,
+        "selected": true
+      },
+      {
+        "table": "orders",
+        "columns": [
+          "o_orderkey",
+          "o_orderstatus"
+        ],
+        "measured_gain_ms": 10.5,
+        "size_mb": 45.09,
+        "build_s": 1.4,
+        "selected": true
+      },
+      {
+        "table": "nation",
+        "columns": [
+          "n_name",
+          "n_nationkey"
+        ],
+        "measured_gain_ms": -1.0,
+        "size_mb": 0.02,
+        "build_s": 0.0,
+        "selected": false
+      },
+      {
+        "table": "customer",
+        "columns": [
+          "c_acctbal"
+        ],
+        "measured_gain_ms": -5.3,
+        "size_mb": 3.23,
+        "build_s": 0.2,
+        "selected": false
+      },
+      {
+        "table": "customer",
+        "columns": [
+          "c_custkey",
+          "c_nationkey"
+        ],
+        "measured_gain_ms": -16.2,
+        "size_mb": 3.23,
+        "build_s": 0.2,
+        "selected": false
+      },
+      {
+        "table": "supplier",
+        "columns": [
+          "s_suppkey",
+          "s_nationkey"
+        ],
+        "measured_gain_ms": -20.6,
+        "size_mb": 0.23,
+        "build_s": 0.0,
+        "selected": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "tag": "tuned_norm20",
+  "created_indexes": [
+    "ix_nation_n_nationkey_n_regionkey",
+    "ix_supplier_s_suppkey_s_nationkey",
+    "ix_orders_o_orderkey_o_orderstatus",
+    "ix_lineitem_l_receiptdate",
+    "ix_nation_n_name_n_nationkey"
+  ],
+  "summary": {
+    "n_queries": 22,
+    "n_timeouts": 0,
+    "total_ms": 28363.1,
+    "median_of_medians_ms": 772.0
+  },
+  "results": {
+    "1": {
+      "qid": "1",
+      "median_ms": 6820.07,
+      "times_ms": [
+        6823.04,
+        6817.6,
+        6820.07
+      ],
+      "digest": "be05d6ca62ecfcbc793d46449b1c20ae",
+      "timed_out": false
+    },
+    "10": {
+      "qid": "10",
+      "median_ms": 1669.62,
+      "times_ms": [
+        1664.7,
+        1669.62,
+        1670.35
+      ],
+      "digest": "1eff4f1393dc4fd2780830256c44e529",
+      "timed_out": false
+    },
+    "11": {
+      "qid": "11",
+      "median_ms": 91.06,
+      "times_ms": [
+        88.93,
+        91.06,
+        91.65
+      ],
+      "digest": "9dadc17b250f05c8782cdfeab888da27",
+      "timed_out": false
+    },
+    "12": {
+      "qid": "12",
+      "median_ms": 839.32,
+      "times_ms": [
+        839.32,
+        842.28,
+        835.62
+      ],
+      "digest": "e0680c1d9a3c41125d3aba42f7e33f74",
+      "timed_out": false
+    },
+    "13": {
+      "qid": "13",
+      "median_ms": 1358.28,
+      "times_ms": [
+        1358.28,
+        1345.38,
+        1365.79
+      ],
+      "digest": "54b0e708a98f27b7282a24fcc2c3b7d7",
+      "timed_out": false
+    },
+    "14": {
+      "qid": "14",
+      "median_ms": 1075.18,
+      "times_ms": [
+        1075.18,
+        1074.15,
+        1075.71
+      ],
+      "digest": "020ac10a6d0458a6fcade3d786464545",
+      "timed_out": false
+    },
+    "15": {
+      "qid": "15",
+      "median_ms": 1105.37,
+      "times_ms": [
+        1105.32,
+        1117.18,
+        1105.37
+      ],
+      "digest": "7fdc67b291bdb47a0de9b3d29a465d8b",
+      "timed_out": false
+    },
+    "16": {
+      "qid": "16",
+      "median_ms": 648.63,
+      "times_ms": [
+        650.31,
+        647.28,
+        648.63
+      ],
+      "digest": "498ece365748c0b1fbc7f506a9fc10a7",
+      "timed_out": false
+    },
+    "17": {
+      "qid": "17",
+      "median_ms": 1164.49,
+      "times_ms": [
+        1163.22,
+        1164.49,
+        1165.08
+      ],
+      "digest": "1ed8f520d3e7966e97c46cff0ebfcb1a",
+      "timed_out": false
+    },
+    "18": {
+      "qid": "18",
+      "median_ms": 5066.35,
+      "times_ms": [
+        5066.35,
+        5080.48,
+        5062.07
+      ],
+      "digest": "f01f44d2d59aec740bb1358fb65b306a",
+      "timed_out": false
+    },
+    "19": {
+      "qid": "19",
+      "median_ms": 67.52,
+      "times_ms": [
+        67.85,
+        67.52,
+        67.49
+      ],
+      "digest": "74f7bf74da70d53a5decce496b75d4d6",
+      "timed_out": false
+    },
+    "2": {
+      "qid": "2",
+      "median_ms": 216.4,
+      "times_ms": [
+        218.88,
+        216.4,
+        215.08
+      ],
+      "digest": "df243d03776967dead07184124ed75af",
+      "timed_out": false
+    },
+    "20": {
+      "qid": "20",
+      "median_ms": 505.43,
+      "times_ms": [
+        505.98,
+        504.87,
+        505.43
+      ],
+      "digest": "4ace20b0c1b4df1c923ac5e7b8350587",
+      "timed_out": false
+    },
+    "21": {
+      "qid": "21",
+      "median_ms": 768.99,
+      "times_ms": [
+        768.9,
+        772.92,
+        768.99
+      ],
+      "digest": "a80b43a0989c7393a354560e54da2a16",
+      "timed_out": false
+    },
+    "22": {
+      "qid": "22",
+      "median_ms": 165.85,
+      "times_ms": [
+        166.66,
+        165.85,
+        165.58
+      ],
+      "digest": "8656cb7cda404fce73ab019e461586e5",
+      "timed_out": false
+    },
+    "3": {
+      "qid": "3",
+      "median_ms": 775.03,
+      "times_ms": [
+        775.03,
+        775.66,
+        772.66
+      ],
+      "digest": "264c6b34de1c5bd96be44b6b16a33ea6",
+      "timed_out": false
+    },
+    "4": {
+      "qid": "4",
+      "median_ms": 353.45,
+      "times_ms": [
+        353.98,
+        353.45,
+        353.05
+      ],
+      "digest": "047846fd59caf6cb508d1287453f5843",
+      "timed_out": false
+    },
+    "5": {
+      "qid": "5",
+      "median_ms": 547.39,
+      "times_ms": [
+        547.39,
+        539.65,
+        552.82
+      ],
+      "digest": "322b9c1b5d82d388bf04bbdfc72c54e2",
+      "timed_out": false
+    },
+    "6": {
+      "qid": "6",
+      "median_ms": 1073.18,
+      "times_ms": [
+        1072.74,
+        1073.51,
+        1073.18
+      ],
+      "digest": "89c9dca713f5f646878f63c52c6576de",
+      "timed_out": false
+    },
+    "7": {
+      "qid": "7",
+      "median_ms": 633.8,
+      "times_ms": [
+        639.1,
+        633.8,
+        630.07
+      ],
+      "digest": "ebdb502f158cedffc7b0fcdfb0fd099f",
+      "timed_out": false
+    },
+    "8": {
+      "qid": "8",
+      "median_ms": 254.33,
+      "times_ms": [
+        251.77,
+        259.75,
+        254.33
+      ],
+      "digest": "d9009e1ffc57831634bdde92949b0d9d",
+      "timed_out": false
+    },
+    "9": {
+      "qid": "9",
+      "median_ms": 3163.4,
+      "times_ms": [
+        3162.45,
+        3164.64,
+        3163.4
+      ],
+      "digest": "3555c716825746705eb8f16c3519adab",
+      "timed_out": false
+    }
+  }
+}

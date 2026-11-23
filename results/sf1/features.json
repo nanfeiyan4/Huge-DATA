@@ -1,0 +1,894 @@
+{
+  "n_queries": 22,
+  "queries": [
+    {
+      "qid": "1",
+      "relations": {
+        "lineitem": "lineitem"
+      },
+      "eq_preds": [],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_shipdate"
+        ]
+      ],
+      "join_cols": [],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "10",
+      "relations": {
+        "customer": "customer",
+        "orders": "orders",
+        "lineitem": "lineitem",
+        "nation": "nation"
+      },
+      "eq_preds": [
+        [
+          "lineitem",
+          "l_returnflag"
+        ]
+      ],
+      "range_preds": [
+        [
+          "orders",
+          "o_orderdate"
+        ]
+      ],
+      "join_cols": [
+        [
+          "customer",
+          "c_custkey"
+        ],
+        [
+          "customer",
+          "c_nationkey"
+        ],
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "nation",
+          "n_nationkey"
+        ],
+        [
+          "orders",
+          "o_custkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "11",
+      "relations": {
+        "partsupp": "partsupp",
+        "supplier": "supplier",
+        "nation": "nation"
+      },
+      "eq_preds": [
+        [
+          "nation",
+          "n_name"
+        ]
+      ],
+      "range_preds": [],
+      "join_cols": [
+        [
+          "nation",
+          "n_nationkey"
+        ],
+        [
+          "partsupp",
+          "ps_suppkey"
+        ],
+        [
+          "supplier",
+          "s_nationkey"
+        ],
+        [
+          "supplier",
+          "s_suppkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "12",
+      "relations": {
+        "orders": "orders",
+        "lineitem": "lineitem"
+      },
+      "eq_preds": [
+        [
+          "orders",
+          "o_orderpriority"
+        ]
+      ],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_commitdate"
+        ],
+        [
+          "lineitem",
+          "l_receiptdate"
+        ],
+        [
+          "lineitem",
+          "l_shipdate"
+        ],
+        [
+          "orders",
+          "o_orderpriority"
+        ]
+      ],
+      "join_cols": [
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "13",
+      "relations": {
+        "customer": "customer",
+        "orders": "orders"
+      },
+      "eq_preds": [],
+      "range_preds": [],
+      "join_cols": [
+        [
+          "customer",
+          "c_custkey"
+        ],
+        [
+          "orders",
+          "o_custkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "14",
+      "relations": {
+        "lineitem": "lineitem",
+        "part": "part"
+      },
+      "eq_preds": [],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_shipdate"
+        ],
+        [
+          "part",
+          "p_type"
+        ]
+      ],
+      "join_cols": [
+        [
+          "lineitem",
+          "l_partkey"
+        ],
+        [
+          "part",
+          "p_partkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "15",
+      "relations": {
+        "lineitem": "lineitem",
+        "supplier": "supplier",
+        "revenue0": "revenue0"
+      },
+      "eq_preds": [
+        [
+          "supplier",
+          "s_suppkey"
+        ]
+      ],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_shipdate"
+        ]
+      ],
+      "join_cols": [],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "16",
+      "relations": {
+        "partsupp": "partsupp",
+        "supplier": "supplier",
+        "part": "part"
+      },
+      "eq_preds": [],
+      "range_preds": [
+        [
+          "part",
+          "p_brand"
+        ],
+        [
+          "supplier",
+          "s_comment"
+        ]
+      ],
+      "join_cols": [
+        [
+          "part",
+          "p_partkey"
+        ],
+        [
+          "partsupp",
+          "ps_partkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "17",
+      "relations": {
+        "lineitem": "lineitem",
+        "part": "part"
+      },
+      "eq_preds": [
+        [
+          "part",
+          "p_brand"
+        ],
+        [
+          "part",
+          "p_container"
+        ]
+      ],
+      "range_preds": [],
+      "join_cols": [
+        [
+          "lineitem",
+          "l_partkey"
+        ],
+        [
+          "part",
+          "p_partkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "18",
+      "relations": {
+        "customer": "customer",
+        "lineitem": "lineitem",
+        "orders": "orders"
+      },
+      "eq_preds": [],
+      "range_preds": [],
+      "join_cols": [
+        [
+          "customer",
+          "c_custkey"
+        ],
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "orders",
+          "o_custkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "19",
+      "relations": {
+        "lineitem": "lineitem",
+        "part": "part"
+      },
+      "eq_preds": [
+        [
+          "lineitem",
+          "l_shipinstruct"
+        ],
+        [
+          "part",
+          "p_brand"
+        ]
+      ],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_quantity"
+        ],
+        [
+          "part",
+          "p_size"
+        ]
+      ],
+      "join_cols": [
+        [
+          "lineitem",
+          "l_partkey"
+        ],
+        [
+          "part",
+          "p_partkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "2",
+      "relations": {
+        "part": "part",
+        "partsupp": "partsupp",
+        "supplier": "supplier",
+        "nation": "nation",
+        "region": "region"
+      },
+      "eq_preds": [
+        [
+          "part",
+          "p_size"
+        ],
+        [
+          "region",
+          "r_name"
+        ]
+      ],
+      "range_preds": [
+        [
+          "part",
+          "p_type"
+        ]
+      ],
+      "join_cols": [
+        [
+          "nation",
+          "n_nationkey"
+        ],
+        [
+          "nation",
+          "n_regionkey"
+        ],
+        [
+          "part",
+          "p_partkey"
+        ],
+        [
+          "partsupp",
+          "ps_partkey"
+        ],
+        [
+          "partsupp",
+          "ps_suppkey"
+        ],
+        [
+          "region",
+          "r_regionkey"
+        ],
+        [
+          "supplier",
+          "s_nationkey"
+        ],
+        [
+          "supplier",
+          "s_suppkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "20",
+      "relations": {
+        "supplier": "supplier",
+        "partsupp": "partsupp",
+        "part": "part",
+        "lineitem": "lineitem",
+        "nation": "nation"
+      },
+      "eq_preds": [
+        [
+          "nation",
+          "n_name"
+        ]
+      ],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_shipdate"
+        ],
+        [
+          "part",
+          "p_name"
+        ]
+      ],
+      "join_cols": [
+        [
+          "lineitem",
+          "l_partkey"
+        ],
+        [
+          "lineitem",
+          "l_suppkey"
+        ],
+        [
+          "nation",
+          "n_nationkey"
+        ],
+        [
+          "partsupp",
+          "ps_partkey"
+        ],
+        [
+          "partsupp",
+          "ps_suppkey"
+        ],
+        [
+          "supplier",
+          "s_nationkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "21",
+      "relations": {
+        "supplier": "supplier",
+        "l2": "lineitem",
+        "l3": "lineitem",
+        "l1": "lineitem",
+        "orders": "orders",
+        "nation": "nation"
+      },
+      "eq_preds": [
+        [
+          "nation",
+          "n_name"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ],
+        [
+          "orders",
+          "o_orderstatus"
+        ],
+        [
+          "supplier",
+          "s_suppkey"
+        ]
+      ],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_receiptdate"
+        ],
+        [
+          "lineitem",
+          "l_suppkey"
+        ]
+      ],
+      "join_cols": [
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "nation",
+          "n_nationkey"
+        ],
+        [
+          "supplier",
+          "s_nationkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "22",
+      "relations": {
+        "customer": "customer",
+        "orders": "orders"
+      },
+      "eq_preds": [],
+      "range_preds": [
+        [
+          "customer",
+          "c_acctbal"
+        ]
+      ],
+      "join_cols": [
+        [
+          "customer",
+          "c_custkey"
+        ],
+        [
+          "orders",
+          "o_custkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "3",
+      "relations": {
+        "customer": "customer",
+        "orders": "orders",
+        "lineitem": "lineitem"
+      },
+      "eq_preds": [
+        [
+          "customer",
+          "c_mktsegment"
+        ]
+      ],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_shipdate"
+        ],
+        [
+          "orders",
+          "o_orderdate"
+        ]
+      ],
+      "join_cols": [
+        [
+          "customer",
+          "c_custkey"
+        ],
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "orders",
+          "o_custkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "4",
+      "relations": {
+        "orders": "orders",
+        "lineitem": "lineitem"
+      },
+      "eq_preds": [],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_commitdate"
+        ],
+        [
+          "orders",
+          "o_orderdate"
+        ]
+      ],
+      "join_cols": [
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "5",
+      "relations": {
+        "customer": "customer",
+        "orders": "orders",
+        "lineitem": "lineitem",
+        "supplier": "supplier",
+        "nation": "nation",
+        "region": "region"
+      },
+      "eq_preds": [
+        [
+          "region",
+          "r_name"
+        ]
+      ],
+      "range_preds": [
+        [
+          "orders",
+          "o_orderdate"
+        ]
+      ],
+      "join_cols": [
+        [
+          "customer",
+          "c_custkey"
+        ],
+        [
+          "customer",
+          "c_nationkey"
+        ],
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "lineitem",
+          "l_suppkey"
+        ],
+        [
+          "nation",
+          "n_nationkey"
+        ],
+        [
+          "nation",
+          "n_regionkey"
+        ],
+        [
+          "orders",
+          "o_custkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ],
+        [
+          "region",
+          "r_regionkey"
+        ],
+        [
+          "supplier",
+          "s_nationkey"
+        ],
+        [
+          "supplier",
+          "s_suppkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "6",
+      "relations": {
+        "lineitem": "lineitem"
+      },
+      "eq_preds": [],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_discount"
+        ],
+        [
+          "lineitem",
+          "l_quantity"
+        ],
+        [
+          "lineitem",
+          "l_shipdate"
+        ]
+      ],
+      "join_cols": [],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "7",
+      "relations": {
+        "l_shipdate": "l_shipdate",
+        "supplier": "supplier"
+      },
+      "eq_preds": [
+        [
+          "customer",
+          "c_nationkey"
+        ],
+        [
+          "supplier",
+          "s_nationkey"
+        ]
+      ],
+      "range_preds": [
+        [
+          "lineitem",
+          "l_shipdate"
+        ]
+      ],
+      "join_cols": [
+        [
+          "customer",
+          "c_custkey"
+        ],
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "lineitem",
+          "l_suppkey"
+        ],
+        [
+          "orders",
+          "o_custkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ],
+        [
+          "supplier",
+          "s_suppkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "8",
+      "relations": {
+        "o_orderdate": "o_orderdate",
+        "part": "part"
+      },
+      "eq_preds": [
+        [
+          "customer",
+          "c_nationkey"
+        ],
+        [
+          "part",
+          "p_type"
+        ],
+        [
+          "region",
+          "r_name"
+        ],
+        [
+          "supplier",
+          "s_nationkey"
+        ]
+      ],
+      "range_preds": [
+        [
+          "orders",
+          "o_orderdate"
+        ]
+      ],
+      "join_cols": [
+        [
+          "customer",
+          "c_custkey"
+        ],
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "lineitem",
+          "l_partkey"
+        ],
+        [
+          "lineitem",
+          "l_suppkey"
+        ],
+        [
+          "orders",
+          "o_custkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ],
+        [
+          "part",
+          "p_partkey"
+        ],
+        [
+          "supplier",
+          "s_suppkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    },
+    {
+      "qid": "9",
+      "relations": {
+        "o_orderdate": "o_orderdate",
+        "part": "part"
+      },
+      "eq_preds": [],
+      "range_preds": [
+        [
+          "part",
+          "p_name"
+        ]
+      ],
+      "join_cols": [
+        [
+          "lineitem",
+          "l_orderkey"
+        ],
+        [
+          "lineitem",
+          "l_partkey"
+        ],
+        [
+          "lineitem",
+          "l_suppkey"
+        ],
+        [
+          "nation",
+          "n_nationkey"
+        ],
+        [
+          "orders",
+          "o_orderkey"
+        ],
+        [
+          "part",
+          "p_partkey"
+        ],
+        [
+          "partsupp",
+          "ps_partkey"
+        ],
+        [
+          "partsupp",
+          "ps_suppkey"
+        ],
+        [
+          "supplier",
+          "s_nationkey"
+        ],
+        [
+          "supplier",
+          "s_suppkey"
+        ]
+      ],
+      "group_cols": [],
+      "order_cols": []
+    }
+  ]
+}

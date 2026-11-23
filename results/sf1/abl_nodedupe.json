@@ -1,0 +1,120 @@
+{
+  "n_selected": 7,
+  "used_bytes": 207462906,
+  "used_mb": 197.85,
+  "budget_mb": 202.01,
+  "base_cost": 3921542.5,
+  "final_cost": 3566750.2,
+  "cost_reduction_pct": 9.05,
+  "evals": 1385,
+  "indexes": [
+    {
+      "table": "nation",
+      "columns": [
+        "n_name"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "lineitem",
+      "columns": [
+        "l_shipdate"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "supplier",
+      "columns": [
+        "s_suppkey"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_container",
+        "p_brand"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "orders",
+      "columns": [
+        "o_orderdate"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "part",
+      "columns": [
+        "p_size"
+      ],
+      "source": "rule"
+    },
+    {
+      "table": "partsupp",
+      "columns": [
+        "ps_partkey"
+      ],
+      "source": "rule"
+    }
+  ],
+  "steps": [
+    {
+      "iteration": 1,
+      "candidate": "nation_n_name",
+      "gain": 4.120000000024447,
+      "ratio": 0.003363265306142406,
+      "size_bytes": 1225,
+      "cost_after": 3921538.33
+    },
+    {
+      "iteration": 2,
+      "candidate": "lineitem_l_shipdate",
+      "gain": 269779.49,
+      "ratio": 0.001926606219383432,
+      "size_bytes": 140028350,
+      "cost_after": 3651758.84
+    },
+    {
+      "iteration": 3,
+      "candidate": "supplier_s_suppkey",
+      "gain": 412.13000000000466,
+      "ratio": 0.001766273951819951,
+      "size_bytes": 233333,
+      "cost_after": 3651346.71
+    },
+    {
+      "iteration": 4,
+      "candidate": "part_p_container_p_brand",
+      "gain": 15884.220000000008,
+      "ratio": 0.0017914535181544008,
+      "size_bytes": 8866666,
+      "cost_after": 3635462.4899999998
+    },
+    {
+      "iteration": 5,
+      "candidate": "orders_o_orderdate",
+      "gain": 50325.109999999986,
+      "ratio": 0.0014378602857142854,
+      "size_bytes": 35000000,
+      "cost_after": 3585137.38
+    },
+    {
+      "iteration": 6,
+      "candidate": "part_p_size",
+      "gain": 6294.659999999989,
+      "ratio": 0.001348855906979413,
+      "size_bytes": 4666666,
+      "cost_after": 3578842.7199999997
+    },
+    {
+      "iteration": 7,
+      "candidate": "partsupp_ps_partkey",
+      "gain": 12092.539999999994,
+      "ratio": 0.0006478146659933806,
+      "size_bytes": 18666666,
+      "cost_after": 3566750.18
+    }
+  ]
+}
